@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- diretiva show - v-if - v-else -->
+    <!-- <div id="app">
+        <div v-if="showTitle">
+            {{title}}
+        </div>
+
+        <div v-else>
+            Vue.js
+        </div>
+        
+    </div> -->
+
+    <!-- diretiva v-else-if  -->
+    <!-- <div id="app">
+        <div v-if="showTitle">
+            {{title}}
+        </div>
+
+        <div v-else-if="showTitle2">
+            {{title2}}
+        </div>
+
+        <div v-else>
+            Vue.js
+        </div>
+        
+    </div> -->
+    
+    <!-- usando tamplate com v-if -->
+    <!-- <div id="app">
+        <div v-if="level > 0 && level < 50">
+            Estudando Vue.js
+        </div>
+
+        <template v-else-if="level >= 50">
+            Decolando em Vue.js
+            <div>dfggdffdhhd</div>
+            <div>hfdhfdhhd</div>
+            <div>hhbncbftr</div>
+            <div>rsvztthhb</div>
+        </template>
+
+        <div v-else>
+            Iniciando Vue.js
+        </div>
+        
+    </div> -->
+
+    <!-- diretiva v-for -->
+    <!-- <div id="app">
+        <h1>{{title}}</h1>
+
+        <ul>
+            <li v-for="movie in movies">
+                {{movie.name}} ({{movie.release_date}})
+            </li>
+        </ul>        
+    </div> -->
+
+    <!-- diretiva v-bind -->
+    <!-- <div id="app">
+        <h1>{{title}}</h1>
+
+        <img 
+            v-bind:src="src" 
+            v-bind:alt="alt"
+        >
+    </div> -->
+ 
+    <!-- diretiva v-bind class binding -->
+    <!-- <div id="app">
+        <h1>{{title}}</h1>
+
+        <div :class="card">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla leo, interdum sit amet eleifend nec, pharetra et tortor. Fusce venenatis imperdiet odio, at varius augue vehicula in. Nullam luctus aliquam nunc id placerat.</p>
+            </div>
+        </div>
+        
+    </div> -->
+    
+
+    <!-- diretiva v-bind style binding -->
+    <!-- <div id="app">
+        <h1>{{title}}</h1>
+
+        <div :style="card">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla leo, interdum sit amet eleifend nec, pharetra et tortor. Fusce venenatis imperdiet odio, at varius augue vehicula in. Nullam luctus aliquam nunc id placerat.</p>
+            </div>
+        </div>
+        
+    </div> -->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return{
+                    // title: 'Hello world',
+                    // title2: 'Estou dando Vue.js',
+                    // showTitle: false,
+                    // showTitle2: false,
+                    // level: 50,
+                    // title: 'Hello world',
+                    // movies: [
+                    //     {name: 'Batman', release_date: '01/03/2010'},
+                    //     {name: 'Wolverine', release_date: '01/05/2015'},
+                    //     {name: 'Iron Man', release_date: '10/10/2020'},
+                    // ],
+                    // title: 'Hello world',
+                    // src: 'https://via.placeholder.com/150',
+                    // alt: 'Vue.js - já estou decolando',
+                    // title: 'Hello world',
+                    // card: {display:'flex',backgroundColor: '#0d6efd', 'color': 'white'},
+                };
+            },
+        }).mount('#app')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
